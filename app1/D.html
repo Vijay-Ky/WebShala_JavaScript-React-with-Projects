@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>internal javascript</title>
+  </head>
+  <body>
+    <!-- emmet shortcut: btn.btn*7{some data} -->
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <button class="btn">some data</button>
+    <!-- script should be at the bottom after all the html content -->
+    <!-- otherwise, usually js code is bigger so browser spends time in parsing only js -->
+    <!-- first it will load html content then parse js -->
+    <!-- no need of remembering anything here it is just to show you why internal js is better than inline js -->
+    <!-- but what if want to develop some more pages similar to this thats where comes external js -->
+    <!-- with internal js only affecting this document not others -->
+    <script>
+      document.querySelectorAll(".btn").forEach((item) => {
+        item.addEventListener("click", () => {
+          alert("this is awesome");
+        });
+      });
+    </script>
+  </body>
+</html>
