@@ -1,8 +1,8 @@
-// Implicit Type Conversion
+// Implicit Type Conversion(type casting)
 
-// const name = 'john';
+// const myname = 'john';
 // const lastName = 'jordan';
-// const fullName = name + ' ' + lastName;
+// const fullName = myname + ' ' + lastName;
 // console.log(fullName);
 
 // const number = 4;
@@ -10,7 +10,7 @@
 // const result = number + number2;
 // console.log(result);
 
-// const value = name - lastName;
+// const value = number - lastName;
 // console.log(value);
 
 // let number3 = 10;
@@ -25,7 +25,7 @@ document.querySelector(".form").addEventListener("submit", function (e) {
   e.preventDefault();
   let value = document.getElementById("amount").value;
   value = parseInt(value);
-  console.log("Input Value Type");
+  console.log("Input Value Type " + typeof value);
   console.log(value);
   console.log("Sum of Two Values");
   console.log(randomNumber + value);

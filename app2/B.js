@@ -1,6 +1,6 @@
 // Functions - declare, invoke
 //function is a keyword
-//function(parameters)
+//function(parameters)//arguments, function signature
 // {
 //      logic
 // }
