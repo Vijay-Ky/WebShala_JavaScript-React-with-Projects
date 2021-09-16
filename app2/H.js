@@ -7,10 +7,10 @@ const num1 = 6;
 const num2 = 6;
 const result = num1 >= num2;
 
-const value = false;
+const value = true;
 
 if (!value) {
-  console.log('value is false');
+  console.log('value is true');
 }
 
 // if (num1 > num2) {
@@ -20,3 +20,21 @@ if (!value) {
 // } else {
 //   console.log('second number is bigger than first');
 // }
+
+ i = 10;
+// if(1)
+// {
+// 	console.log("from if");
+// 	console.log("from if");
+// }
+// if(i = 1)
+// {
+// 	console.log("from if");
+// 	console.log("from if");
+// }
+
+if("")//false
+{
+	console.log("from if");
+	console.log("from if");
+}

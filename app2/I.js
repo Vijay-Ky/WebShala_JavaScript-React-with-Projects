@@ -7,8 +7,9 @@
 const num1 = 6;
 const num2 = '6';
 
-const value = num1 != num2;
-const value2 = num1 !== num2;
+const value1 = num1 == num2;
+const value2 = num1 != num2;
+const value3 = num1 !== num2;
 
-console.log(value);
-console.log(value2);
+console.log(value3);
+
